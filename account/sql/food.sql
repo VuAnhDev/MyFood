@@ -60,12 +60,12 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `customer_id`, `address`, `description`, `date`, `payment_type`, `total`, `status`, `deleted`) VALUES
-(1, 2, 'Address 2', 'Sample Description 1', '2017-03-28 17:32:41', 'Wallet', 150, 'Yet to be delivered', 0),
-(2, 2, 'New address 2', '', '2017-03-28 17:43:05', 'Wallet', 130, 'Cancelled by Customer', 1),
-(3, 3, 'Address 3', 'Sample Description 2', '2017-03-28 19:49:33', 'Cash On Delivery', 130, 'Yet to be delivered', 0),
-(4, 3, 'Address 3', '', '2017-03-28 19:52:01', 'Cash On Delivery', 130, 'Cancelled by Customer', 1),
-(5, 3, 'New Address 3', '', '2017-03-28 20:47:28', 'Wallet', 285, 'Paused', 0),
-(6, 3, 'New Address 3', '', '2017-03-30 00:43:31', 'Wallet', 325, 'Cancelled by Customer', 1);
+(1, 2, 'Address 2', 'Sample Description 1', '2023-03-28 17:32:41', 'Wallet', 150, 'Yet to be delivered', 0),
+(2, 2, 'New address 2', '', '2023-03-28 17:43:05', 'Wallet', 130, 'Cancelled by Customer', 1),
+(3, 3, 'Address 3', 'Sample Description 2', '2023-03-28 19:49:33', 'Cash On Delivery', 130, 'Yet to be delivered', 0),
+(4, 3, 'Address 3', '', '2023-03-28 19:52:01', 'Cash On Delivery', 130, 'Cancelled by Customer', 1),
+(5, 3, 'New Address 3', '', '2023-03-28 20:47:28', 'Wallet', 285, 'Paused', 0),
+(6, 3, 'New Address 3', '', '2023-03-30 00:43:31', 'Wallet', 325, 'Cancelled by Customer', 1);
 
 -- --------------------------------------------------------
 
@@ -123,7 +123,7 @@ CREATE TABLE `tickets` (
 --
 
 INSERT INTO `tickets` (`id`, `poster_id`, `subject`, `description`, `status`, `type`, `date`, `deleted`) VALUES
-(1, 2, 'Subject 1', 'New Description for Subject 1', 'Answered', 'Support', '2017-03-30 18:08:51', 0);
+(1, 2, 'Subject 1', 'New Description for Subject 1', 'Answered', 'Support', '2023-03-30 18:08:51', 0);
 
 -- --------------------------------------------------------
 
@@ -144,10 +144,10 @@ CREATE TABLE `ticket_details` (
 --
 
 INSERT INTO `ticket_details` (`id`, `ticket_id`, `user_id`, `description`, `date`) VALUES
-(1, 1, 2, 'New Description for Subject 1', '2017-03-30 18:08:51'),
-(2, 1, 2, 'Reply-1 for Subject 1', '2017-03-30 19:59:09'),
-(3, 1, 1, 'Reply-2 for Subject 1 from Administrator.', '2017-03-30 20:35:39'),
-(4, 1, 1, 'Reply-3 for Subject 1 from Administrator.', '2017-03-30 20:49:35');
+(1, 1, 2, 'New Description for Subject 1', '2023-03-30 18:08:51'),
+(2, 1, 2, 'Reply-1 for Subject 1', '2023-03-30 19:59:09'),
+(3, 1, 1, 'Reply-2 for Subject 1 from Administrator.', '2023-03-30 20:35:39'),
+(4, 1, 1, 'Reply-3 for Subject 1 from Administrator.', '2023-03-30 20:49:35');
 
 -- --------------------------------------------------------
 
